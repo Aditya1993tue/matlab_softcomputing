@@ -1,0 +1,4 @@
+>> a = [ 1 2 3; 2 3 4; 1 2 5]
+b = [ 2 1 3 ; 5 0 -2; 2 3 -1]
+prod = a * b
+#matrix multiplication can be appiled for N X M as the format will remain same#
