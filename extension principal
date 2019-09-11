@@ -1,0 +1,13 @@
+a=[0.3 0.4 0.8 0.2]
+A=[2 3 4 6]
+m=size(A,2)
+b=[0.4 0.3 0.6]
+B=[1 2 3]
+n=size(B,2)
+AxB=size(m,n);
+for i= 1:m
+    for j= 1:n
+        AxB(i,j)=min(a(i),b(j));
+    end
+end
+disp(AxB)
