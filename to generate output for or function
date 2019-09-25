@@ -1,0 +1,27 @@
+x1 = [1 1 0 0]
+x2 = [1 0 1 0]
+w1 = input('enter the first weight');
+w2 = input('enter the second weight');
+t = input('enter the threshold');
+for i =1:4
+    hx = w1 *x1(i) + w2 * x2(i);
+    if hx >= t
+        y(i) = 1;
+    else
+        y(i) = 0;
+    end
+end
+[x1',x2',y']
+
+
+
+enter the first weight1
+enter the second weight2
+enter the threshold3
+
+ans =
+
+     1     1     1
+     1     0     0
+     0     1     0
+     0     0     0
