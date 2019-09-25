@@ -1,0 +1,32 @@
+x1=[1 0 1 1]
+x2=[1 1 1 1]
+x3=[1 0 1 0]
+x4=[1 0 0 1]
+b=[1 1 1 1]
+y=[1 1 0 0]
+w1=0;
+w2=0;
+w3=0;
+w4=0;
+h=0;
+for i=1:4
+    d1(i)=x1(i)*y(i);
+     d2(i)=x2(i)*y(i);
+      d3(i)=x3(i)*y(i);
+       d4(i)=x4(i)*y(i);
+       db(i)=b(i)*y(i);
+w1_n(i)=w1+d1(i); 
+w2_n(i)=w2+d2(i);
+w3_n(i)=w3+d3(i);
+w4_n(i)=w4+d4(i);
+b_n(i)=h+db(i);
+w1=w1_n(i);
+w2=w2_n(i);
+w3=w3_n(i);
+w4=w4_n(i);
+h=b_n(i);
+end
+disp('input target weight change weight');
+disp('x1 x2 x3 x4 b y dw1 dw2 dw3 dw4 db w1 w2 w3 w4 B');
+H=[x1' x2' x3' x4' b' y' dw1' dw2' dw3' dw4' db' w1_n' w2_n' w3_n' w4_n' b_n'];
+disp(H)
