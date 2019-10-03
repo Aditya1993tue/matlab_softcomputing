@@ -1,0 +1,36 @@
+%wieghts 1 -1 -1 1 threshold 1
+%weights 1 1 threshold 1
+x1 = [1 1 0 0];
+x2 = [1 0 1 0];
+w11 = input('Enter first weight');
+w12 = input('Enter second weight');
+w21 = input('Enter third weight');
+w22 = input ('Enter fourth weight');
+t = input('Enter the threshold');
+for i = 1:4
+    hx1 = w11 * x1(i) + w21 * x2(i);
+    hx2 = w12 * x1(i) + w22 * x2(i);
+     if hx1 >=t
+        z1(i) = 1;
+    else
+        z1(i) = 0;
+     end
+    if hx2 >= t
+        z2(i) = 1;
+    else
+        z2(i) = 0;
+    end
+end
+w1 = input('Enter first weight');
+w2 = input('Enter second weight');
+t1 = input ('Enter threshold')
+for i = 1:4
+    hx = w1 * z1(i) + w2 * z2(i);
+    if hx >= t1
+        y(i) = 1;
+    else
+        y(i) = 0;
+    end
+end
+   
+[x1', x2',z1',z2', y'] 
