@@ -10,11 +10,11 @@ x2 = [1 1 1 -1];
 x3 = [1 0 1 0];
 x4 = [1 -1 -1 1];
 y = [1 -1 -1 1];
-w1 = input('Enter first weight');
-w2 = input('Enter second weight');
-w3 = input('Enter third weight');
-w4 = input('Enter fourth weight');
-b = input('Enter the bias');
+w1 = input('Enter first weight');=0
+w2 = input('Enter second weight');=0
+w3 = input('Enter third weight');=0
+w4 = input('Enter fourth weight');=0
+b = input('Enter the bias');=0
 
 for i = 1:4
     w1 = w1+x1(i)*y(i);
