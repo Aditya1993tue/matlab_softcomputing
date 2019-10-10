@@ -1,0 +1,25 @@
+a matlab program using hebbian rule to find the weight required to perform following c;assification 
+
+1- vectors (1 1 1 1) , ( -1 1 -1 -1) are members of a class(with target value 1)
+2- vectors (1 1 1 1 ),(1 -1 -1 1 )  are members of a class (with target value -1)
+
+
+
+x1 = [1 -1 1 1];
+x2 = [1 1 1 -1];
+x3 = [1 0 1 0];
+x4 = [1 -1 -1 1];
+y = [1 -1 -1 1];
+w1 = input('Enter first weight');
+w2 = input('Enter second weight');
+w3 = input('Enter third weight');
+w4 = input('Enter fourth weight');
+b = input('Enter the bias');
+
+for i = 1:4
+    w1 = w1+x1(i)*y(i);
+    w2 = w2+x2(i)*y(i);
+    w3 = w3+x3(i)*y(i);
+    w2 = w2+x4(i)*y(i);
+    b=b+y(i);
+end
