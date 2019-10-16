@@ -1,0 +1,15 @@
+x = input('input the value of x');
+y = input('input the value of y');
+z = input('input the value of z');
+s = x+y+z;
+if(s==1||s==-1)
+    t=s;
+else
+    t=s/3;
+end
+t
+#output#
+input the value of x1
+input the value of y1
+input the value of z1
+t=1
