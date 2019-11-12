@@ -1,0 +1,16 @@
+x1 = [1 1 1 1 -1 -1 -1 -1];
+x2 = [1 1 -1 -1 1 1 -1 -1];
+x3 = [1 -1 1 -1 1 -1 1 -1];
+t = [1 1 1 -1 1 -1 -1 -1];
+
+w1 = ('enter the first weight');
+w2 = ('enter the second weight');
+w3 = ('enter the third weight');
+b = ('enter the bias');
+for i =1:8
+w1 = w1+x1(i)*t(i);
+w2 = w2+x2(i)*t(i);
+w3 = w3+x3(i)*t(i);
+b = b+t(i);
+end
+[w1 w2 w3];
